@@ -29,3 +29,61 @@ http://localhost:{your_default_port}/registration
 ```
 then to your email address will be send a confirmation link.
 Click it and your acount will be active. 
+
+## Api map:
+
+* You can search artist by name typing it in artistName like below (get request):
+```
+http://localhost:{your_default_port}/name/{artistName}
+```
+
+* List artist discography by artist name (get request):
+```
+http://localhost:{your_default_port}/albums/{artistName}
+```
+
+* Save artist to favourite by name (post request):
+```
+http://localhost:{your_default_port}/name/{artistName}
+```
+
+* Delete artist from favourite by idArtist (delete request):
+```
+http://localhost:{your_default_port}/delete/{artistId}
+```
+
+* List favorite artists discography (get request);
+```
+http://localhost:{your_default_port}/albums
+```
+
+* Get track by artist name and track name (get request):
+```
+http://localhost:{your_default_port}/track/{artistName}/{trackName}
+```
+
+* Save track to favorite by artist name and track name (post request):
+```
+http://localhost:{your_default_port}/track/{artistName}/{trackName}
+```
+
+* List favorite tracks (get request):
+```
+http://localhost:{your_default_port}/tracks
+```
+
+* Delete track from favorite by idTrack (delete request):
+```
+http://localhost:{your_default_port}/delete/track/{idTrack}
+```
+
+* Send an email with your favorite tracks (get request):
+```
+http://localhost:{your_default_port}/send
+```
+
+* List your favorite artists (get request):
+```
+http://localhost:{your_default_port}/artists
+```
+
