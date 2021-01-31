@@ -32,57 +32,57 @@ Click it and your acount will be active.
 
 ## Api map:
 
-* You can search artist by name typing it in artistName like below (get request):
+* You can search artist by name typing it in artistName like below (GET request):
 ```
 http://localhost:{your_default_port}/name/{artistName}
 ```
 
-* List artist discography by artist name (get request):
+* List artist discography by artist name (GET request):
 ```
 http://localhost:{your_default_port}/albums/{artistName}
 ```
 
-* Save artist to favourite by name (post request):
+* Save artist to favourite by name (POST request):
 ```
 http://localhost:{your_default_port}/name/{artistName}
 ```
 
-* Delete artist from favourite by idArtist (delete request):
+* Delete artist from favourite by idArtist (DELETE request):
 ```
 http://localhost:{your_default_port}/delete/{artistId}
 ```
 
-* List favorite artists discography (get request);
+* List favorite artists discography (GET request);
 ```
 http://localhost:{your_default_port}/albums
 ```
 
-* Get track by artist name and track name (get request):
+* Get track by artist name and track name (GET request):
 ```
 http://localhost:{your_default_port}/track/{artistName}/{trackName}
 ```
 
-* Save track to favorite by artist name and track name (post request):
+* Save track to favorite by artist name and track name (POST request):
 ```
 http://localhost:{your_default_port}/track/{artistName}/{trackName}
 ```
 
-* List favorite tracks (get request):
+* List favorite tracks (GET request):
 ```
 http://localhost:{your_default_port}/tracks
 ```
 
-* Delete track from favorite by idTrack (delete request):
+* Delete track from favorite by idTrack (DELETE request):
 ```
 http://localhost:{your_default_port}/delete/track/{idTrack}
 ```
 
-* Send an email with your favorite tracks (get request):
+* Send an email with your favorite tracks (GET request):
 ```
 http://localhost:{your_default_port}/send
 ```
 
-* List your favorite artists (get request):
+* List your favorite artists (GET request):
 ```
 http://localhost:{your_default_port}/artists
 ```
